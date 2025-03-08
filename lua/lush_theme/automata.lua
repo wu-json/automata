@@ -68,7 +68,7 @@ local theme = lush(function(injected_functions)
 		--
 		-- ColorColumn    { }, -- Columns set with 'colorcolumn'
 		-- Conceal        { }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
-		-- Cursor         { }, -- Character under the cursor
+		Cursor({ bg = machine_rust, fg = desert_sand }), -- Character under the cursor
 		-- CurSearch      { }, -- Highlighting a search pattern under the cursor (see 'hlsearch')
 		-- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
 		-- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
@@ -281,7 +281,7 @@ local theme = lush(function(injected_functions)
 		-- sym"@operator"          { }, -- Operator
 		-- sym"@keyword"           { }, -- Keyword
 		-- sym"@exception"         { }, -- Exception
-		-- sym"@variable"          { }, -- Identifier
+		sym("@variable")({ fg = machine_rust }), -- Identifier
 		-- sym"@type"              { }, -- Type
 		-- sym"@type.definition"   { }, -- Typedef
 		-- sym"@storageclass"      { }, -- StorageClass
