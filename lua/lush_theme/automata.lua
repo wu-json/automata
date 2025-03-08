@@ -147,12 +147,12 @@ local theme = lush(function(injected_functions)
 
 		Comment({ fg = machine_rust }), -- Any comment
 
-		-- Constant       { }, -- (*) Any constant
-		-- String         { }, --   A string constant: "this is a string"
-		-- Character      { }, --   A character constant: 'c', '\n'
-		-- Number         { }, --   A number constant: 234, 0xff
-		-- Boolean        { }, --   A boolean constant: TRUE, false
-		-- Float          { }, --   A floating point constant: 2.3e10
+		Constant({ fg = machine_rust }), -- (*) Any constant
+		String({ fg = machine_rust }), --   A string constant: "this is a string"
+		Character({ fg = machine_rust }), --   A character constant: 'c', '\n'
+		Number({ fg = machine_rust }), --   A number constant: 234, 0xff
+		Boolean({ fg = machine_rust }), --   A boolean constant: TRUE, false
+		Float({ fg = machine_rust }), --   A floating point constant: 2.3e10
 
 		-- Identifier     { }, -- (*) Any variable name
 		-- Function       { }, --   Function name (also: methods for classes)
@@ -278,7 +278,7 @@ local theme = lush(function(injected_functions)
 		-- sym"@conditional"       { }, -- Conditional
 		-- sym"@repeat"            { }, -- Repeat
 		-- sym"@label"             { }, -- Label
-		-- sym"@operator"          { }, -- Operator
+		sym("@operator")({ fg = machine_rust }), -- Operator
 		-- sym"@keyword"           { }, -- Keyword
 		-- sym"@exception"         { }, -- Exception
 		sym("@variable")({ fg = machine_rust }), -- Identifier
