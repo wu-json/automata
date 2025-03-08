@@ -165,23 +165,23 @@ local theme = lush(function(injected_functions)
 		Keyword({ fg = machine_rust }), --   any other keyword
 		Exception({ fg = machine_rust }), --   try, catch, throw
 
-		-- PreProc        { }, -- (*) Generic Preprocessor
-		-- Include        { }, --   Preprocessor #include
-		-- Define         { }, --   Preprocessor #define
-		-- Macro          { }, --   Same as Define
-		-- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
+		PreProc({ fg = machine_rust }), -- (*) Generic Preprocessor
+		Include({ fg = machine_rust }), --   Preprocessor #include
+		Define({ fg = machine_rust }), --   Preprocessor #define
+		Macro({ fg = machine_rust }), --   Same as Define
+		PreCondit({ fg = machine_rust }), --   Preprocessor #if, #else, #endif, etc.
 
-		-- Type           { }, -- (*) int, long, char, etc.
-		-- StorageClass   { }, --   static, register, volatile, etc.
-		-- Structure      { }, --   struct, union, enum, etc.
-		-- Typedef        { }, --   A typedef
+		Type({ fg = machine_rust }), -- (*) int, long, char, etc.
+		StorageClass({ fg = machine_rust }), --   static, register, volatile, etc.
+		Structure({ fg = machine_rust }), --   struct, union, enum, etc.
+		Typedef({ fg = machine_rust }), --   A typedef
 
 		Special({ fg = machine_rust }), -- (*) Any special symbol
 		SpecialChar({ fg = machine_rust }), --   Special character in a constant
-		-- Tag            { }, --   You can use CTRL-] on this
+		Tag({ fg = machine_rust }), --   You can use CTRL-] on this
 		Delimiter({ fg = machine_rust }), --   Character that needs attention
-		-- SpecialComment { }, --   Special things inside a comment (e.g. '\n')
-		-- Debug          { }, --   Debugging statements
+		SpecialComment({ fg = machine_rust }), --   Special things inside a comment (e.g. '\n')
+		Debug({ fg = machine_rust }), --   Debugging statements
 
 		-- Underlined     { gui = "underline" }, -- Text that stands out, HTML links
 		-- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
