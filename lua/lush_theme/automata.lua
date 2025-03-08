@@ -154,16 +154,16 @@ local theme = lush(function(injected_functions)
 		Boolean({ fg = machine_rust }), --   A boolean constant: TRUE, false
 		Float({ fg = machine_rust }), --   A floating point constant: 2.3e10
 
-		-- Identifier     { }, -- (*) Any variable name
-		-- Function       { }, --   Function name (also: methods for classes)
+		Identifier({ fg = machine_rust }), -- (*) Any variable name
+		Function({ fg = machine_rust }), --   Function name (also: methods for classes)
 
-		-- Statement      { }, -- (*) Any statement
-		-- Conditional    { }, --   if, then, else, endif, switch, etc.
-		-- Repeat         { }, --   for, do, while, etc.
-		-- Label          { }, --   case, default, etc.
-		-- Operator       { }, --   "sizeof", "+", "*", etc.
+		Statement({ fg = machine_rust }), -- (*) Any statement
+		Conditional({ fg = machine_rust }), --   if, then, else, endif, switch, etc.
+		Repeat({ fg = machine_rust }), --   for, do, while, etc.
+		Label({ fg = machine_rust }), --   case, default, etc.
+		Operator({ fg = machine_rust }), --   "sizeof", "+", "*", etc.
 		Keyword({ fg = machine_rust }), --   any other keyword
-		-- Exception      { }, --   try, catch, throw
+		Exception({ fg = machine_rust }), --   try, catch, throw
 
 		-- PreProc        { }, -- (*) Generic Preprocessor
 		-- Include        { }, --   Preprocessor #include
