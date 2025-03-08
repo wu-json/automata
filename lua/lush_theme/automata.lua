@@ -102,13 +102,13 @@ local theme = lush(function(injected_functions)
 		-- MoreMsg        { }, -- |more-prompt|
 		-- NonText        { }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 		Normal({ bg = desert_sand, fg = machine_rust }), -- Normal text
-		-- NormalFloat({ { bg = desert_sand, fg = machine_rust } }), -- Normal text in floating windows.
-		-- FloatBorder    { }, -- Border of floating windows.
-		-- FloatTitle     { }, -- Title of floating windows.
-		-- NormalNC       { }, -- normal text in non-current windows
-		-- Pmenu          { }, -- Popup menu: Normal item.
-		-- PmenuSel       { }, -- Popup menu: Selected item.
-		-- PmenuKind      { }, -- Popup menu: Normal item "kind"
+		NormalFloat({ bg = desert_sand, fg = machine_rust }), -- Normal text in floating windows.
+		FloatBorder({ bg = desert_sand, fg = machine_rust }), -- Border of floating windows.
+		FloatTitle({ fg = machine_rust }), -- Title of floating windows.
+		NormalNC({ fg = machine_rust }), -- normal text in non-current windows
+		Pmenu({ bg = desert_sand, fg = machine_rust }), -- Popup menu: Normal item.
+		PmenuSel({ fg = machine_rust }), -- Popup menu: Selected item.
+		PmenuKind({ fg = machine_rust }), -- Popup menu: Normal item "kind"
 		-- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
 		-- PmenuExtra     { }, -- Popup menu: Normal item "extra text"
 		-- PmenuExtraSel  { }, -- Popup menu: Selected item "extra text"
