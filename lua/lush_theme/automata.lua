@@ -176,10 +176,10 @@ local theme = lush(function(injected_functions)
 		-- Structure      { }, --   struct, union, enum, etc.
 		-- Typedef        { }, --   A typedef
 
-		-- Special        { }, -- (*) Any special symbol
-		-- SpecialChar    { }, --   Special character in a constant
+		Special({ fg = machine_rust }), -- (*) Any special symbol
+		SpecialChar({ fg = machine_rust }), --   Special character in a constant
 		-- Tag            { }, --   You can use CTRL-] on this
-		-- Delimiter      { }, --   Character that needs attention
+		Delimiter({ fg = machine_rust }), --   Character that needs attention
 		-- SpecialComment { }, --   Special things inside a comment (e.g. '\n')
 		-- Debug          { }, --   Debugging statements
 
@@ -273,7 +273,7 @@ local theme = lush(function(injected_functions)
 		-- sym"@parameter"         { }, -- Identifier
 		-- sym"@method"            { }, -- Function
 		-- sym"@field"             { }, -- Identifier
-		-- sym"@property"          { }, -- Identifier
+		sym("@property")({ fg = machine_rust }), -- Identifier
 		-- sym"@constructor"       { }, -- Special
 		-- sym"@conditional"       { }, -- Conditional
 		-- sym"@repeat"            { }, -- Repeat
