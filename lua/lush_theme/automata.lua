@@ -162,7 +162,7 @@ local theme = lush(function(injected_functions)
 		-- Repeat         { }, --   for, do, while, etc.
 		-- Label          { }, --   case, default, etc.
 		-- Operator       { }, --   "sizeof", "+", "*", etc.
-		-- Keyword        { }, --   any other keyword
+		Keyword({ fg = machine_rust }), --   any other keyword
 		-- Exception      { }, --   try, catch, throw
 
 		-- PreProc        { }, -- (*) Generic Preprocessor
