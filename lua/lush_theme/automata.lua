@@ -66,7 +66,7 @@ local theme = lush(function(injected_functions)
 		--
 		-- See :h highlight-groups
 		--
-		-- ColorColumn    { }, -- Columns set with 'colorcolumn'
+		ColorColumn({ bg = machine_rust, fg = desert_sand }), -- Columns set with 'colorcolumn'
 		-- Conceal        { }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
 		Cursor({ bg = machine_rust, fg = desert_sand }), -- Character under the cursor
 		-- CurSearch      { }, -- Highlighting a search pattern under the cursor (see 'hlsearch')
@@ -95,7 +95,7 @@ local theme = lush(function(injected_functions)
 		-- CursorLineNr   { }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 		-- CursorLineFold { }, -- Like FoldColumn when 'cursorline' is set for the cursor line
 		-- CursorLineSign { }, -- Like SignColumn when 'cursorline' is set for the cursor line
-		-- MatchParen     { }, -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+		MatchParen({ bg = machine_rust, fg = desert_sand }), -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
 		-- ModeMsg        { }, -- 'showmode' message (e.g., "-- INSERT -- ")
 		-- MsgArea        { }, -- Area for messages and cmdline
 		-- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -122,7 +122,7 @@ local theme = lush(function(injected_functions)
 		-- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
 		-- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
 		-- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-		-- StatusLine     { }, -- Status line of current window
+		StatusLine({ bg = desert_sand.darken(10), fg = machine_rust }), -- Status line of current window
 		-- StatusLineNC   { }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 		-- TabLine        { }, -- Tab pages line, not active tab page label
 		-- TabLineFill    { }, -- Tab pages line, where there are no labels
