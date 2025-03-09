@@ -145,7 +145,7 @@ local theme = lush(function(injected_functions)
 		--
 		-- Uncomment and edit if you want more specific syntax highlighting.
 
-		Comment({ fg = machine_rust.lighten(30) }), -- Any comment
+		Comment({ fg = machine_rust.lighten(10) }), -- Any comment
 
 		Constant({ fg = machine_rust }), -- (*) Any constant
 		String({ fg = machine_rust }), --   A string constant: "this is a string"
