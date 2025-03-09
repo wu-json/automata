@@ -113,7 +113,7 @@ local theme = lush(function(injected_functions)
 		-- PmenuExtra     { }, -- Popup menu: Normal item "extra text"
 		-- PmenuExtraSel  { }, -- Popup menu: Selected item "extra text"
 		-- PmenuSbar      { }, -- Popup menu: Scrollbar.
-		-- PmenuThumb     { }, -- Popup menu: Thumb of the scrollbar.
+		PmenuThumb({ bg = machine_rust, fg = desert_sand }), -- Popup menu: Thumb of the scrollbar.
 		-- Question       { }, -- |hit-enter| prompt and yes/no questions
 		-- QuickFixLine   { }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
 		-- Search         { }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
