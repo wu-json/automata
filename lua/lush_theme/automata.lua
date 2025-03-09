@@ -100,7 +100,10 @@ local theme = lush(function(injected_functions)
 		-- MsgArea        { }, -- Area for messages and cmdline
 		-- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
 		-- MoreMsg        { }, -- |more-prompt|
-		-- NonText        { }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+
+		-- NOTE: This is is used for text autocomplete suggestions as well.
+		NonText({ fg = machine_rust.lighten(30) }), -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+
 		Normal({ bg = desert_sand, fg = machine_rust }), -- Normal text
 		NormalFloat({ bg = desert_sand, fg = machine_rust }), -- Normal text in floating windows.
 		FloatBorder({ bg = desert_sand, fg = machine_rust }), -- Border of floating windows.
